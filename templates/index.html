@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio - Shafana Alfiyani</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Portfolio Shafana Alfiyani, Teknik Informatika Universitas Bale Bandung" name="keywords">
+        <meta content="Portfolio pribadi Shafana Alfiyani untuk tugas Kecerdasan Buatan" name="description">
+
+        <!-- Favicon -->
+        <link href="{{ url_for('static', filename='img/favicon.ico') }}" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="{{ url_for('static', filename='lib/slick/slick.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='lib/slick/slick-theme.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    </head>
+
+        <!-- Template Stylesheet -->
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <img src="{{ url_for('static', filename='img/profile_1.png') }}" alt="Foto Shafana Alfiyani">
+                </div>
+                <div class="sidebar-content">
+                    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">Navigasi</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#header">Beranda<i class="fa fa-home"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">Tentang Saya<i class="fa fa-address-card"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#experience">Pengalaman<i class="fa fa-star"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#service">Bidang Keahlian<i class="fa fa-tasks"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#portfolio">Portofolio<i class="fa fa-file-archive"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Kontak<i class="fa fa-envelope"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="sidebar-footer">
+                    <a class="btn" href="https://www.instagram.com/selsa.hfy?igsh=bnlpajM4OW1wd2J6" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a class="btn" href="https://github.com/SelsaShaf" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a class="btn" href="https://youtube.com/@prakai_shfy?si=ah5kn54fXlXRDs2A" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="content">
+            
+
+                <!-- Header Start -->
+                <div class="header" id="header">
+                    <div class="content-inner">
+                        <p>Hallo, Saya</p>
+                        <h1>Selsa Shafana Alfiyani</h1>
+                        <h2></h2>
+                        <div class="typed-text">Mahasiswa Teknik Informatika, Web Developer, System Designer, UI/UX Enthusiast</div>
+                    </div>
+                </div>
+                
+                <!-- Header End -->
+                
+                <!-- Large Button Start -->
+                <div class="large-btn">
+                    <div class="content-inner">
+                        <a class="btn" href="#"><i class="fa fa-download"></i>Unduh CV</a>
+                        <a class="btn" href="#contact"><i class="fa fa-hands-helping"></i>Hubungi Saya</a>
+                    </div>
+                </div>
+                <!-- Large Button End -->
+                
+                <!-- About Start -->
+                <div class="about" id="about">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Tentang Saya</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6 col-lg-5">
+                                <img src="{{ url_for('static', filename='img/about.png') }}" alt="Tentang Shafana">
+                            </div>
+                            <div class="col-md-6 col-lg-7">
+                                <p>
+                                    Saya adalah mahasiswa Teknik Informatika yang sedang menempuh pendidikan di Universitas Bale Bandung. Saya memiliki ketertarikan dalam bidang pengembangan web serta desain sistem.
+                                </p>
+                                <p>
+                                    Selama perkuliahan, saya telah mengerjakan berbagai tugas dan proyek, baik secara individu maupun kelompok, yang membantu saya memahami proses pembuatan aplikasi dan sistem secara lebih mendalam. Portfolio ini berisi pengalaman, keterampilan, serta hasil karya yang telah saya kerjakan.
+                                </p>
+                                <a class="btn" href="#contact">Hubungi Saya</a>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-12">
+                                <h3 style="font-weight: 700; margin-bottom: 20px;">Keahlian & Skill</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skills">
+                                    <div class="skill-name">
+                                        <p>Python & Flask</p><p>75%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="skill-name">
+                                        <p>HTML & CSS</p><p>85%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="skills">
+                                    <div class="skill-name">
+                                        <p>UI/UX (Figma/Canva)</p><p>90%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="skill-name">
+                                        <p>Video Editing</p><p>80%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                <!-- About End -->
+                
+                <!-- Education Start -->
+                <div class="education" id="education">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Pendidikan</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="edu-col">
+                                    <span>2024 — Sekarang</span>
+                                    <h3>Universitas Bale Bandung</h3>
+                                    <h4>S1 Teknik Informatika</h4>
+                                    <p>Mahasiswa aktif semester 4 dengan fokus pada pengembangan perangkat lunak dan desain sistem informasi.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="edu-col">
+                                    <span>2021 — 2024</span>
+                                    <h3>SMAS Beringin Ratu</h3>
+                                    <h4>Jurusan MIPA</h4>
+                                    <p>Membentuk dasar logika dan analisis yang kuat melalui pembelajaran matematika dan ilmu pengetahuan alam.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="edu-col">
+                                    <span>2018 — 2021</span>
+                                    <h3>SMPS Beringin Ratu 02</h3>
+                                    <p>Mulai aktif dalam organisasi sekolah dan pengembangan minat dasar pada teknologi.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="edu-col">
+                                    <span>2012 — 2018</span>
+                                    <h3>SDN 02 Sukabumi</h3>
+                                    <p>Menyelesaikan pendidikan dasar dengan baik dan membangun fondasi belajar yang disiplin.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Education End -->
+                
+                <!-- Experience Start -->
+                <div class="experience" id="experience">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Pengalaman</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            
+                            <div class="col-md-6">
+                                <div class="exp-col">
+                                    <span>Pemrograman Dasar & OOP</span>
+                                    <h3>Software Development</h3>
+                                    <h4>C++, Java, & Python</h4>
+                                    <p>Membangun logika pemrograman mulai dari sistem kalkulator sederhana hingga aplikasi kasir dan pengelolaan data berbasis Object-Oriented Programming (OOP) dengan fitur inheritance dan modularitas.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="exp-col">
+                                    <span>Web Development</span>
+                                    <h3>Web & Database Management</h3>
+                                    <h4>HTML, CSS, & MySQL (XAMPP)</h4>
+                                    <p>Mengembangkan platform web fungsional seperti sistem penyewaan alat camping yang terintegrasi dengan database, mencakup manajemen data yang dinamis dan terstruktur.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="exp-col">
+                                    <span>UI/UX & Multimedia</span>
+                                    <h3>Design & Creative Media</h3>
+                                    <h4>Design & Editing Suite</h4>
+                                    <p>Merancang antarmuka pengguna (UI/UX) yang estetis erta berpengalaman luas dalam pengolahan konten visual mulai dari desain grafis, editing foto, hingga produksi video profesional menggunakan berbagai software industri populer.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="exp-col">
+                                    <span>Game & System Tools</span>
+                                    <h3>Game Dev & Debugging</h3>
+                                    <h4>Unity Engine & Terminal</h4>
+                                    <p>Membuat proyek game 2D menggunakan Unity serta terbiasa menggunakan terminal untuk proses debugging dan manajemen sistem saat pengembangan aplikasi.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Experience End -->
+                
+                
+                <!-- Bidang Keahlian Start -->
+                 <div class="service" id="service">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Bidang Keahlian</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="srv-col">
+                                    <i class="fa fa-desktop"></i>
+                                    <h3>Web Development</h3>
+                                    <p>Menyediakan solusi pembuatan website yang responsif dan fungsional, memadukan desain antarmuka modern dengan integrasi basis data yang efisien.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="srv-col">
+                                    <i class="fa fa-film"></i>
+                                    <h3>Creative Multimedia</h3>
+                                    <p>Layanan produksi konten digital berkualitas, mencakup pengolahan visual, desain grafis, serta editing video profesional untuk berbagai kebutuhan media.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="srv-col">
+                                    <i class="fa fa-code"></i>
+                                    <h3>Software & Game Dev</h3>
+                                    <p>Pengembangan aplikasi kustom dan purwarupa permainan interaktif dengan fokus pada logika sistem yang kuat dan pengalaman pengguna yang optimal.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="srv-col">
+                                    <i class="fa fa-cube"></i>
+                                    <h3>3D & Digital Design</h3>
+                                    <p>Pembuatan aset visual tiga dimensi dan elemen desain digital inovatif untuk menciptakan visualisasi teknologi yang lebih hidup dan menarik.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bidang Keahlian End -->
+                
+                <!-- Portfolio Start -->
+                <div class="portfolio" id="portfolio">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Portfolio</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <ul id="portfolio-flters">
+                                    <li data-filter="*" class="filter-active">All</li>
+                                    <li data-filter=".web-des">Design</li>
+                                    <li data-filter=".web-dev">Development</li>
+                                    <li data-filter=".dig-mar">Multimedia</li> </ul>
+                            </div>
+                        </div>
+                        <div class="row portfolio-container">
+                            
+                            <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="{{ url_for('static', filename='img/portfolio-1.png') }}" class="img-fluid" alt="">
+                                        <a href="{{ url_for('static', filename='img/portfolio-1.png') }}" data-lightbox="portfolio" data-title="Flask Web Application" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a class="portfolio-title" href="#">Flask Project <span>Development</span></a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="{{ url_for('static', filename='img/portfolio-2.png') }}" class="img-fluid" alt="">
+                                        <a href="{{ url_for('static', filename='img/portfolio-2.png') }}" data-lightbox="portfolio" data-title="Unity 2D Game" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a class="portfolio-title" href="#">Unity Game <span>Development</span></a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="{{ url_for('static', filename='img/portfolio-3.png') }}" class="img-fluid" alt="">
+                                        <a href="{{ url_for('static', filename='img/portfolio-3.png') }}" data-lightbox="portfolio" data-title="UI/UX Figma Design" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a class="portfolio-title" href="#">UI/UX Design <span>Design</span></a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item web-des">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="{{ url_for('static', filename='img/portfolio-4.png') }}" class="img-fluid" alt="">
+                                        <a href="{{ url_for('static', filename='img/portfolio-4.png') }}" data-lightbox="portfolio" data-title="Branding Project" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a class="portfolio-title" href="#">Branding Logo <span>Design</span></a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item dig-mar">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="{{ url_for('static', filename='img/portfolio-5.jpeg') }}" class="img-fluid" alt="">
+                                        <a href="{{ url_for('static', filename='img/portfolio-5.jpeg') }}" data-lightbox="portfolio" data-title="Video Editing Project" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a class="portfolio-title" href="#">Video Project <span>Multimedia</span></a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 portfolio-item dig-mar">
+                                <div class="portfolio-wrap">
+                                    <figure>
+                                        <img src="{{ url_for('static', filename='img/portfolio-6.jpeg') }}" class="img-fluid" alt="">
+                                        <a href="{{ url_for('static', filename='img/portfolio-6.jpeg') }}" data-lightbox="portfolio" data-title="3D Render Animation" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
+                                        <a class="portfolio-title" href="#">3D Animation <span>Multimedia</span></a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio End -->
+                
+                <!-- Pencapaian & statistik -->
+                <div class="review" id="review">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Pencapaian & Statistik</h2>
+                        </div>
+                        <div class="row align-items-center review-slider">
+                            
+                            <div class="col-md-12">
+                                <div class="review-slider-item">
+                                    <div class="review-text">
+                                        <p>
+                                            "Telah mengimplementasikan berbagai proyek pemrograman berbasis objek dan pengembangan web fungsional menggunakan Flask selama masa studi Informatika."
+                                        </p>
+                                    </div>
+                                    <div class="review-img">
+                                        <img src="{{ url_for('static', filename='img/review-1.jpg') }}" alt="Icon">
+                                        <div class="review-name">
+                                            <h3>Project Completion</h3>
+                                            <p>Development & Logic</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="review-slider-item">
+                                    <div class="review-text">
+                                        <p>
+                                            "Eksplorasi mendalam dalam perancangan aset visual 3D, desain antarmuka pengguna (UI/UX), serta produksi multimedia yang komunikatif."
+                                        </p>
+                                    </div>
+                                    <div class="review-img">
+                                        <img src="{{ url_for('static', filename='img/review-2.jpg') }}" alt="Icon">
+                                        <div class="review-name">
+                                            <h3>Creative Exploration</h3>
+                                            <p>Multimedia & Design</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="review-slider-item">
+                                    <div class="review-text">
+                                        <p>
+                                            "Menjaga konsistensi belajar selama 4 semester di Teknik Informatika dengan fokus pada pemahaman struktur data dan sistem informasi."
+                                        </p>
+                                    </div>
+                                    <div class="review-img">
+                                        <img src="{{ url_for('static', filename='img/review-3.jpg') }}" alt="Icon">
+                                        <div class="review-name">
+                                            <h3>Academic Journey</h3>
+                                            <p>Continuous Learning</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Review End -->
+                
+                <!-- Contact Start -->
+                <div class="contact" id="contact">
+                    <div class="content-inner">
+                        <div class="content-header">
+                            <h2>Kontak</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="contact-info">
+                                    <p><i class="fa fa-user"></i> Selsa Shafana Alfiyani</p>
+                                    <p><i class="fa fa-tag"></i>Mahasiswi Teknik Informatika</p>
+                                    <p><i class="fa fa-envelope"></i><a href="mailto:shafana@example.com">alfiyanishafana@example.com</a></p>
+                                    <p><i class="fa fa-map-marker"></i>Universitas Bale Bandung</p>
+                                    
+                                    <div class="social">
+                                        <div class="social">
+                                            
+
+                                            <a class="btn" href="https://www.instagram.com/selsa.hfy?igsh=bnlpajM4OW1wd2J6" title="Instagram"><i class="fab fa-instagram"></i></a>
+
+                                            <a class="btn" href="https://wa.me/6282290314330" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+                                            <a class="btn" href="https://www.facebook.com/share/1CmhnuHWGB/" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+
+                                            <a class="btn" href="https://github.com/SelsaShaf" title="GitHub"><i class="fab fa-github"></i></a>
+
+                                            <a class="btn" href="https://youtube.com/@prakai_shfy?si=ah5kn54fXlXRDs2A" title="YouTube"><i class="fab fa-youtube"></i></a>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form">
+                                    <form action="/contact" method="POST">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <input type="text" name="name" class="form-control" placeholder="Nama Kamu" required />
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <input type="email" name="email" class="form-control" placeholder="Email Kamu" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="subject" class="form-control" placeholder="Subjek / Perihal" required />
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea name="message" class="form-control" rows="5" placeholder="Pesan" required></textarea>
+                                        </div>
+                                        <div><button class="btn" type="submit">Kirim Pesan</button></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact End -->
+                
+                <!-- Footer Start -->
+                <<div class="footer">
+                    <div class="content-inner">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <p>&copy; 2026 <strong> Selsa Shafana Alfiyani</strong>. Hak Cipta Dilindungi.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Dibuat dengan <i class="fa fa-heart text-danger"></i> & <a href="#">Flask</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer End -->
+            </div>
+        </div>
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='lib/slick/slick.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='lib/typed/typed.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='lib/isotope/isotope.pkgd.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js') }}"></script>
+        
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+        
+        <!-- Template Javascript -->
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>
